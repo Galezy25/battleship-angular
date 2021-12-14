@@ -1,0 +1,85 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  gap: 0.1em;
+  text-align: center;
+  background-color: var(--cg-blue);
+}
+
+.board .header {
+  background-color: var(--sea-blue);
+  border: 1px solid var(--maastricht-blue);
+}
+
+.coordinate {
+  border-radius: 5px;
+  background-color: var(--cg-blue);
+  border: 1px solid var(--prussian-blue);
+  width: 100%;
+  min-height: max-content;
+  cursor: pointer;
+  color: #eee;
+}
+
+.coordinate:hover {
+  background-color: var(--medium-electric-blue);
+}
+
+.coordinate:disabled {
+  cursor: initial;
+}
+
+.coordinate::after {
+  content: "\00a0";
+}
+
+.coordinate.status--1 {
+  background-color: var(--dark-cerulean);
+}
+
+.coordinate.status-1 {
+  background-color: #ff6f00;
+}
+
+.coordinate.status-2,
+.coordinate.status-3,
+.coordinate.status-4,
+.coordinate.status-5,
+.coordinate.status-6,
+.coordinate.status-7,
+.coordinate.status-8 {
+  background-color: #777;
+}
+
+.coordinate.status-2,
+.coordinate.status-3,
+.coordinate.status-5,
+.coordinate.status-6,
+.coordinate.status-7 {
+  border-top: 4px solid #000;
+}
+
+.coordinate.status-2,
+.coordinate.status-3,
+.coordinate.status-4,
+.coordinate.status-6,
+.coordinate.status-8 {
+  border-right: 4px solid #000;
+}
+
+.coordinate.status-2,
+.coordinate.status-4,
+.coordinate.status-5,
+.coordinate.status-6,
+.coordinate.status-7 {
+  border-bottom: 4px solid #000;
+}
+
+.coordinate.status-2,
+.coordinate.status-3,
+.coordinate.status-4,
+.coordinate.status-5,
+.coordinate.status-8 {
+  border-left: 4px solid #000;
+}
