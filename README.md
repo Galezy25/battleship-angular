@@ -1,6 +1,6 @@
 # Battleship
 
-This project is a simple game as example of what you can do in Angular 13. It has made with some basic concepts like `component`, `service` and `pipe`, also some others like `routing`, `local indexed database`, and develop utilities like `unit testing`, `code coverage` and `linting`.
+This project is a simple game, an example of what you can do in Angular 13. It has made with some basic concepts like `component`, `service` and `pipe`, also some others like `routing`, `local indexed database`, and develop utilities like `unit testing`, `code coverage` and `linting`.
 
 Enjoy it.
 
